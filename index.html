@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>PomoTimer Web</title>
+    <link rel="stylesheet" href="/styles/pico.grey.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <article>
+        <header>
+          <progress value="0" max="100"></progress>
+        </header>
+
+        <div class="sesion-info-container">
+          <span id="session-info">Iniciar</span>
+          <audio id="sessionEndSound" src="/sounds/end-session.mp3"></audio>
+          <audio id="startSound" src="/sounds/start-sound.mp3"></audio>
+        </div>
+
+        <div id="timer">
+          <h1><span id="minutes">25</span>:<span id="seconds">00</span></h1>
+        </div>
+
+        <footer>
+          <button id="startBtn">Iniciar</button>
+          <button id="pauseResumeButton" disabled>Pausar</button>
+          <button id="resetBtn">Reiniciar</button>
+        </footer>
+      </article>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
